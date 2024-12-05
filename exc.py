@@ -1,20 +1,25 @@
-nbr_of_rows=int(input("Enter number of rows : "))
+
+
+x=int(input("Enter number of rows : "))
 #first loop generates rows 
-for i in range (nbr_of_rows):
+for i in range (x):
      #second loop prints * according to i 
-
-     for j in range (i):
-       
-        print( "*" ,end="")
+     for j in range (x - i - 1): 
+          print(" ", end="")  
+          
+     for k in range(2*i+1) :
+          print( "*" ,end="")
+     print()
       
-     print("")  
+    
 
-#generates rows in decreasing order which the second loop depends on i 
-for i in range (nbr_of_rows,0,-1):
-     for j in range (i):
-        print( "*" ,end="")
-       
-     print("")           
+for i in range (x,0,-1):
+      for j in range (x - i - 1): 
+          print(" ", end="")     
+      for k in range(2*i+1) :
+          print( "*" ,end="")
+      print() 
+
  
 
   
